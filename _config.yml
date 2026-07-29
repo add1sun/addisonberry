@@ -1,0 +1,28 @@
+title: Addison Berry
+description: >-
+  TODO: one-line description of the newsletter. This shows up in the header
+  subtitle and in search results / social previews.
+url: https://addisonberry.com
+baseurl: ""
+
+# Cayman, pulled in via jekyll-remote-theme so it can be overridden freely.
+remote_theme: pages-themes/cayman@v0.2.0
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+
+# Buttondown newsletter username — the "USERNAME" in buttondown.com/USERNAME.
+buttondown_username: add1sun
+
+author:
+  name: Addison Berry
+
+# Cayman renders these as buttons in the header when set.
+# show_downloads: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
