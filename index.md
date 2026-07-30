@@ -7,9 +7,10 @@ title: Addison Berry
 
 Follow my newsletter to join the conversation about building better relationships with yourself, your community, and the larger world we live in.
 
+<!-- Sender's snippet ships with style="text-align: left" inline; it's dropped
+     here so the centering in assets/css/style.scss can take effect. -->
 <div
   class="sender-form-field"
-  style="text-align: left"
   data-sender-form-id="{{ site.sender_form_id }}"
 ></div>
 

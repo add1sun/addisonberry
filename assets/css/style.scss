@@ -10,7 +10,17 @@
 // finishes loading and swaps the form in.
 .sender-form-field {
   min-height: 5rem;
-  margin: 1.5rem 0 0.5rem;
+  margin: 1.5rem auto 0.5rem;
+  max-width: 32rem;
+  text-align: center;
+
+  // Sender wraps the form in block-level elements, so text-align alone won't
+  // pull them in — center any direct block children too.
+  form,
+  > div {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .form-note {
