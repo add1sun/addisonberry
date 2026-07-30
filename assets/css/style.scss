@@ -5,61 +5,12 @@
 
 /* --- Signup form ------------------------------------------------------- */
 
-.embeddable-buttondown-form {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem;
+// Sender.net injects and styles the form itself, so there's little to do here.
+// Reserving a minimum height keeps the page from jumping when the script
+// finishes loading and swaps the form in.
+.sender-form-field {
+  min-height: 5rem;
   margin: 1.5rem 0 0.5rem;
-
-  label {
-    // Visually hidden — the placeholder carries the label for sighted users.
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-
-  input[type="email"] {
-    flex: 1 1 18rem;
-    padding: 0.6rem 0.75rem;
-    font-size: 1rem;
-    color: #333;
-    border: 1px solid #dce6f0;
-    border-radius: 0.3rem;
-
-    &:focus {
-      outline: none;
-      border-color: #1e6bb8;
-      box-shadow: 0 0 0 3px rgba(30, 107, 184, 0.2);
-    }
-  }
-
-  input[type="submit"] {
-    padding: 0.6rem 1.4rem;
-    font-size: 1rem;
-    font-weight: 600;
-    color: #fff;
-    cursor: pointer;
-    background-color: #1e6bb8;
-    border: 1px solid transparent;
-    border-radius: 0.3rem;
-
-    &:hover {
-      background-color: #155a9e;
-    }
-  }
-
-  .form-note {
-    // Force onto its own row beneath the input and button.
-    flex: 1 0 100%;
-    margin: 0;
-  }
 }
 
 .form-note {

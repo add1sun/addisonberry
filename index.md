@@ -7,19 +7,18 @@ title: Addison Berry
 
 Follow my newsletter to join the conversation about building better relationships with yourself, your community, and the larger world we live in.
 
-<form
-  action="https://buttondown.com/api/emails/embed-subscribe/{{ site.buttondown_username }}"
-  method="post"
-  class="embeddable-buttondown-form"
->
-  <label for="bd-email">Enter your email</label>
-  <input type="email" name="email" id="bd-email" placeholder="you@example.com" required />
-  <input type="submit" value="Subscribe" />
+<div
+  class="sender-form-field"
+  style="text-align: left"
+  data-sender-form-id="{{ site.sender_form_id }}"
+></div>
+
+<noscript>
   <p class="form-note">
-    <a href="https://buttondown.com/refer/{{ site.buttondown_username }}" target="_blank">
-    </a>
+    The signup form needs JavaScript. You can also subscribe by emailing
+    <a href="mailto:info@osiolabs.com">info@osiolabs.com</a>.
   </p>
-</form>
+</noscript>
 
 ## About
 

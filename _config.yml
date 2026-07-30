@@ -11,8 +11,11 @@ plugins:
   - jekyll-remote-theme
   - jekyll-seo-tag
 
-# Buttondown newsletter username — the "USERNAME" in buttondown.com/USERNAME.
-buttondown_username: add1sun
+# Sender.net newsletter embed.
+# sender_account_id  -> the value passed to sender('...') in the universal script
+# sender_form_id     -> data-sender-form-id on the embed div
+sender_account_id: "80702cf1b09807"
+sender_form_id: "e31qgn"
 
 author:
   name: Addison Berry
