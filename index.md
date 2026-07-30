@@ -17,7 +17,6 @@ Follow my newsletter to join the conversation about building better relationship
   <input type="submit" value="Subscribe" />
   <p class="form-note">
     <a href="https://buttondown.com/refer/{{ site.buttondown_username }}" target="_blank">
-      Powered by Buttondown.
     </a>
   </p>
 </form>
