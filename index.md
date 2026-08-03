@@ -7,19 +7,32 @@ title: Addison Berry
 
 Follow my newsletter to join the conversation about building better relationships with yourself, your community, and the larger world we live in.
 
-<!-- Sender's snippet ships with style="text-align: left" inline; it's dropped
-     here so the centering in assets/css/style.scss can take effect. -->
-<div
-  class="sender-form-field"
-  data-sender-form-id="{{ site.sender_form_id }}"
-></div>
+<div class="signup">
+  <div class="signup__form">
+    <!-- Sender's snippet ships with style="text-align: left" inline; it's
+         dropped here so assets/css/style.scss controls alignment. -->
+    <div
+      class="sender-form-field"
+      data-sender-form-id="{{ site.sender_form_id }}"
+    ></div>
 
-<noscript>
-  <p class="form-note">
-    The signup form needs JavaScript. You can also subscribe by emailing
-    <a href="mailto:info@osiolabs.com">info@osiolabs.com</a>.
-  </p>
-</noscript>
+    <noscript>
+      <p class="form-note">
+        The signup form needs JavaScript. You can also subscribe by emailing
+        <a href="mailto:info@osiolabs.com">info@osiolabs.com</a>.
+      </p>
+    </noscript>
+  </div>
+
+  <img
+    class="signup__photo"
+    src="{{ '/assets/images/addison-berry.jpg' | relative_url }}"
+    alt="Addison Berry"
+    width="200"
+    height="200"
+    loading="lazy"
+  />
+</div>
 
 ## About
 

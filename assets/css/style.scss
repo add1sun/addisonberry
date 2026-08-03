@@ -8,18 +8,40 @@
 // Sender.net injects and styles the form itself, so there's little to do here.
 // Reserving a minimum height keeps the page from jumping when the script
 // finishes loading and swaps the form in.
+// Form on the left, photo on the right. Stacks on narrow screens.
+.signup {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.signup__form {
+  // Grow to fill the row, but wrap the photo underneath below ~20rem.
+  flex: 1 1 20rem;
+  min-width: 0;
+}
+
+.signup__photo {
+  flex: 0 0 auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+// Sender injects and styles the form itself. Reserving a minimum height keeps
+// the page from jumping when the script swaps the form in.
 .sender-form-field {
   min-height: 5rem;
-  margin: 1.5rem auto 0.5rem;
-  max-width: 32rem;
-  text-align: center;
+  text-align: left;
+}
 
-  // Sender wraps the form in block-level elements, so text-align alone won't
-  // pull them in — center any direct block children too.
-  form,
-  > div {
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (max-width: 42em) {
+  // Centered reads better than left-aligned once the photo sits below the form.
+  .signup {
+    justify-content: center;
   }
 }
 
