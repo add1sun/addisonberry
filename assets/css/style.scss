@@ -5,43 +5,21 @@
 
 /* --- Signup form ------------------------------------------------------- */
 
-// Sender.net injects and styles the form itself, so there's little to do here.
+// Sender injects and styles the form itself, so there's little to do here.
 // Reserving a minimum height keeps the page from jumping when the script
 // finishes loading and swaps the form in.
-// Form on the left, photo on the right. Stacks on narrow screens.
-.signup {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 1.5rem;
-  margin: 1.5rem 0 0.5rem;
-}
-
-.signup__form {
-  // Grow to fill the row, but wrap the photo underneath below ~20rem.
-  flex: 1 1 20rem;
-  min-width: 0;
-}
-
-.signup__photo {
-  flex: 0 0 auto;
-  width: 200px;
-  height: 200px;
-  border-radius: 1rem;
-  object-fit: cover;
-}
-
-// Sender injects and styles the form itself. Reserving a minimum height keeps
-// the page from jumping when the script swaps the form in.
 .sender-form-field {
   min-height: 5rem;
-  text-align: left;
-}
+  max-width: 32rem;
+  margin: 1.5rem auto 0.5rem;
+  text-align: center;
 
-@media screen and (max-width: 42em) {
-  // Centered reads better than left-aligned once the photo sits below the form.
-  .signup {
-    justify-content: center;
+  // Sender wraps the form in block-level elements, so text-align alone won't
+  // pull them in — center any direct block children too.
+  form,
+  > div {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -51,5 +29,33 @@
 
   a {
     color: inherit;
+  }
+}
+
+/* --- About photo -------------------------------------------------------- */
+
+// Floated rather than flexed: a float lets the first paragraphs sit beside the
+// photo and any remaining text reflow to full width beneath it.
+.about__photo {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 0 1.5rem 1rem 0;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+
+// Stop the float from bleeding into the footer.
+.site-footer {
+  clear: both;
+}
+
+@media screen and (max-width: 32em) {
+  // Too narrow for text beside a 200px photo — center it and let text run full
+  // width underneath.
+  .about__photo {
+    float: none;
+    display: block;
+    margin: 0 auto 1.5rem;
   }
 }

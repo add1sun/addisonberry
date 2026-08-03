@@ -7,34 +7,30 @@ title: Addison Berry
 
 Follow my newsletter to join the conversation about building better relationships with yourself, your community, and the larger world we live in.
 
-<div class="signup">
-  <div class="signup__form">
-    <!-- Sender's snippet ships with style="text-align: left" inline; it's
-         dropped here so assets/css/style.scss controls alignment. -->
-    <div
-      class="sender-form-field"
-      data-sender-form-id="{{ site.sender_form_id }}"
-    ></div>
+<!-- Sender's snippet ships with style="text-align: left" inline; it's dropped
+     here so assets/css/style.scss controls alignment. -->
+<div
+  class="sender-form-field"
+  data-sender-form-id="{{ site.sender_form_id }}"
+></div>
 
-    <noscript>
-      <p class="form-note">
-        The signup form needs JavaScript. You can also subscribe by emailing
-        <a href="mailto:info@osiolabs.com">info@osiolabs.com</a>.
-      </p>
-    </noscript>
-  </div>
-
-  <img
-    class="signup__photo"
-    src="{{ '/assets/images/addisonberry.jpg' | relative_url }}"
-    alt="Addison Berry"
-    width="200"
-    height="200"
-    loading="lazy"
-  />
-</div>
+<noscript>
+  <p class="form-note">
+    The signup form needs JavaScript. You can also subscribe by emailing
+    <a href="mailto:info@osiolabs.com">info@osiolabs.com</a>.
+  </p>
+</noscript>
 
 ## About
+
+<img
+  class="about__photo"
+  src="{{ '/assets/images/addisonberry.jpg' | relative_url }}"
+  alt="Addison Berry"
+  width="200"
+  height="200"
+  loading="lazy"
+/>
 
 I'm the CEO of [Osio Labs](https://osiolabs.com) and I've worked in open source
 for over 20 years with roles from documentation lead to two terms on the
