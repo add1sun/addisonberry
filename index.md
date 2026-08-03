@@ -26,7 +26,7 @@ Follow my newsletter to join the conversation about building better relationship
 
   <img
     class="signup__photo"
-    src="{{ '/assets/images/addison-berry.jpg' | relative_url }}"
+    src="{{ '/assets/images/addisonberry.jpg' | relative_url }}"
     alt="Addison Berry"
     width="200"
     height="200"
